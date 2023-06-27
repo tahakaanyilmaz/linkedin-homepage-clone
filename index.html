@@ -7,6 +7,57 @@
     <title>LinkedIn Clone</title>
 </head>
 <body>
-    Hello world!
+    <!-- Header : Start -->
+    <header id="header" class="bg-[#FFF] border-b border-b-[#EEE]">
+        <div class="container flex items-center gap-8">
+            <div class="logo-and-search flex gap-1 items-center w-[300px]">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="38x38" fill="#0A66C2" class="mercado-match" width="38" height="38" focusable="false">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
+                </div>
+                <div class="search w-full">
+                    <input type="text" class="search-input rounded-md py-[6px] px-3 block w-full placeholder:text-slate-700 pl-[45px] transition-all focus:w-[350px]" placeholder="Arama Yap"/>
+                </div>
+            </div>
+            <div class="buttons ml-auto order-2 gap-2 flex hover:[&>a.item]:fill-black hover[&>a.item]:text-black [&>a.item:not(.active)]:fill-gray-500 [&>a.item:not(.active)]:text-gray-500 [&>a.item]:flex [&>a.item]:flex-col [&>a.item]:gap-1 [&>a.item]:items-center items-center [&>*]:py-[5px] [&>*]:px-3 [&>a.active]:border-b-2 [&>a.active]:border-b-black">
+                <a href="#" class="item active">
+                    <?xml version="1.0" ?><svg width="20" height="20" enable-background="new 0 0 12 12" id="Слой_1" version="1.1" viewBox="0 0 12 12" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><polygon fill="#1D1D1B" points="6,0 0,5 0,12 4,12 4,7 8,7 8,12 12,12 12,5  "/><rect fill="#1D1D1B" height="4" width="2" x="5" y="8"/></g></svg>
+                    <span>Ana Sayfa</span>
+                </a>
+                <a href="#" class="item">
+                    <?xml version="1.0" ?><svg viewBox="0 0 512 512" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><title/><circle cx="152" cy="184" r="72"/><path d="M234,296c-28.16-14.3-59.24-20-82-20-44.58,0-136,27.34-136,82v42H166V383.93c0-19,8-38.05,22-53.93C199.17,317.32,214.81,305.55,234,296Z"/><path d="M340,288c-52.07,0-156,32.16-156,96v48H496V384C496,320.16,392.07,288,340,288Z"/><circle cx="340" cy="168" r="88"/></svg>
+                    <span>Ağım</span>
+                </a>
+                <a href="#" class="item">
+                    <?xml version="1.0" ?><svg width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="Experience_briefcase"><path d="M347,354.0043a27.9927,27.9927,0,0,1-28,28H193a28.037,28.037,0,0,1-28-28H74a62.5813,62.5813,0,0,1-35-10.64v66.64a35.013,35.013,0,0,0,35,35H438a34.9682,34.9682,0,0,0,35-35v-66.64a62.5856,62.5856,0,0,1-35,10.64Z"/><rect height="56" width="126" x="193.0325" y="297.997"/><path d="M438,137.0043H347.03l.0009-.0086V109.0265a42.0759,42.0759,0,0,0-42.0274-42.0308H207.0615a42.0765,42.0765,0,0,0-42.0307,42.0308v27.9692l.0008.0086H74a35.0126,35.0126,0,0,0-35,35v119a35.013,35.013,0,0,0,35,35h91v-28a28.0367,28.0367,0,0,1,28-28H319a27.9924,27.9924,0,0,1,28,28v28h91a34.9682,34.9682,0,0,0,35-35v-119A34.9679,34.9679,0,0,0,438,137.0043Zm-244.97,0,.0009-.0086V109.0265a14.0489,14.0489,0,0,1,14.0307-14.0308h97.9419a14.046,14.046,0,0,1,14.0274,14.0308v27.9692l.0008.0086Z"/></g></svg>
+                    <span>İş İlanları</span>
+                </a>
+                <a href="#" class="item">
+                    <?xml version="1.0" ?><svg height="20" viewBox="0 0 48 48" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M43.98 8c0-2.21-1.77-4-3.98-4H8C5.79 4 4 5.79 4 8v24c0 2.21 1.79 4 4 4h28l8 8-.02-36zM36 28H12v-4h24v4zm0-6H12v-4h24v4zm0-6H12v-4h24v4z"/><path d="M0 0h48v48H0z" fill="none"/></svg>
+                    <span>Mesajlaşma</span>
+                </a>
+                <a href="#" class="item">
+                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="20" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M381.7,225.9c0-97.6-52.5-130.8-101.6-138.2c0-0.5,0.1-1,0.1-1.6c0-12.3-10.9-22.1-24.2-22.1c-13.3,0-23.8,9.8-23.8,22.1   c0,0.6,0,1.1,0.1,1.6c-49.2,7.5-102,40.8-102,138.4c0,113.8-28.3,126-66.3,158h384C410.2,352,381.7,339.7,381.7,225.9z"/><path d="M256.2,448c26.8,0,48.8-19.9,51.7-43H204.5C207.3,428.1,229.4,448,256.2,448z"/></g></svg>
+                    <span>Bildirimler</span>
+                </a>
+                <a href="#" class="item">
+                    <img src="https://picsum.photos/20/20" width="20" height="20" class="rounded-full"/>
+                    <span>Ben</span>
+                </a>
+                <div class="block border-l border-l-[#EEE] flex gap-2 [&>a.item:not(.active)]:fill-gray-500 hover:[&>a.item]:fill-black hover[&>a.item]:text-black [&>a.item:not(.active)]:text-gray-500 [&>a.item]:flex [&>a.item]:flex-col [&>a.item]:gap-1 [&>a.item]:items-center [&>a.item]:px-3">
+                    <a href="#" class="item">
+                        <?xml version="1.0" ?><svg width="20" height="20" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><g id="block"><path d="M8,2H4C2.9,2,2,2.9,2,4v4c0,1.1,0.9,2,2,2h4c1.1,0,2-0.9,2-2V4C10,2.9,9.1,2,8,2z"/><path d="M20,2h-4c-1.1,0-2,0.9-2,2v4c0,1.1,0.9,2,2,2h4c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z"/><path d="M8,14H4c-1.1,0-2,0.9-2,2v4c0,1.1,0.9,2,2,2h4c1.1,0,2-0.9,2-2v-4C10,14.9,9.1,14,8,14z"/><path d="M20,14h-4c-1.1,0-2,0.9-2,2v4c0,1.1,0.9,2,2,2h4c1.1,0,2-0.9,2-2v-4C22,14.9,21.1,14,20,14z"/></g></g></svg>
+                        <span>İş için</span>
+                    </a>
+                    <a href="#" class="item">
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="20" width="20" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M352,377.9H102.4V198.2h57.5c0,0,14.1-19.7,42.7-38.2H83.2c-10.6,0-19.2,8.5-19.2,19.1v217.9c0,10.5,8.6,19.1,19.2,19.1   h288c10.6,0,19.2-8.5,19.2-19.1V288L352,319.4V377.9z M320,224v63.9l128-95.5L320,96v59.7C165.2,155.7,160,320,160,320   C203.8,248.5,236,224,320,224z"/></g></svg>
+                        <span>İş ilanı yayınla</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
 </body>
 </html>

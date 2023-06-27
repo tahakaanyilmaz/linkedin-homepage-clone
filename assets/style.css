@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
+
+/* Base Components */
+/* Ana etiketler */
+body
+{
+    background-color: #F3F2EF;
+    font-size: 14px;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container
+{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.search-input
+{
+    background: #f1f5f9 url(./images/search.svg) no-repeat;
+    background-size: 16px;
+    background-position: 10px;
+}
+
 @tailwind utilities;
